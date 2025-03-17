@@ -1,0 +1,53 @@
+CopyOnWrite Explained 
+
+How it works : 
+
+When you read from a data structure, it displays the existing object (no copying). 
+
+When you modify (write), it creates a new copy and applies changes to that copy instead of modifying the original. 
+
+This ensures security since readers will always be able see a consistent, unmodified original version after making changes. 
+
+ArrayList Example: 
+
+ 
+
+When to use CopyOnWrite 
+
+Best for scenarios with frequent reads and rare edits 
+
+Cybersecurity Applications 
+
+Preventing Unauthorized Modifications (Immutable Data) 
+
+COW ensures that the original data remains unchanged until an intentional modification occurs. 
+
+This protects against unauthorized or accidental modifications, making it useful for secure data storage. 
+
+Secure Snapshotting & Forensics 
+
+COW is widely used to create read-only copies of system states, preventing tampering. 
+
+Malware Resistance & Isolation 
+
+Attackers often try to modify system files to inject malware. 
+
+Using COW-based systems, any modification triggers a new copy, preventing the malware from directly altering critical files. 
+
+ 
+
+Ransomware Mitigation 
+
+COW can be used to maintain immutable backups of critical data. 
+
+If ransomware encrypts or modifies files, the original data remains intact, allowing for easy recovery. 
+
+ 
+
+ 
+
+CopyOnWrite Limitations 
+
+High Memory Usage : Every modification creates a full copy, leading to high memory consumption. 
+
+If an attacker gains root access, they can modify the source data instead of just the copied version. 
