@@ -51,3 +51,7 @@ CopyOnWrite Limitations
 High Memory Usage : Every modification creates a full copy, leading to high memory consumption. 
 
 If an attacker gains root access, they can modify the source data instead of just the copied version. 
+
+Conclusion: CoW is not a standalone protective technique, but it can enhance security by providing isolation, integrity, 
+and rollback capabilities. It works best when combined with other security measures like access controls, encryption, 
+and intrusion detection.

@@ -1,0 +1,17 @@
+N-Map (Network Mapper) (recon) 
+
+(Download N-Map on VM and run through terminal) 
+
+ 
+
+Tool used for network scanning, security auditing, and vulnerability assessment  
+
+Network Discovery – Finding live hosts on a network. 
+
+ Port Scanning – Identifying open ports and services. 
+
+OS Detection – Determining the operating system of a device. 
+
+Vulnerability Scanning – Detecting security flaws. 
+
+Firewall and IDS Evasion – Testing network defenses. 
